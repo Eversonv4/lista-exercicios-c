@@ -4,10 +4,18 @@
 int main()
 {
   int number, rest, result;
-  printf("Digite um número de dois algarismos: ");
+  printf("--------------------------------------------- \n");
+  printf("Questao 4: Faca um programa que inverta um numero inteiro com dois algarismos. \n");
+  printf("--------------------------------------------- \n");
+
+  printf("Digite um numero de dois algarismos: ");
   scanf("%d", &number);
+
   result = number / 10;
   rest = number % 10;
-  printf("%d\n", rest * 10 + result);
+
+  printf("A inversao do numero %d eh %d\n", number, rest * 10 + result);
+
+  system("pause");
   return 0;
 }
